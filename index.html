@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,26 +16,28 @@
       </header>
 
       <form id="todo-form" class="todo-form">
-        <input type="text" id="todo-input" placeholder="Tambahkan task baru..." required />
-
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Tambahkan task baru..."
+          aria-label="Tulis task baru"
+          required
+        />
         <button type="submit">Add</button>
       </form>
 
-      <div class="filter-bar">
+      <div class="filter-bar" role="group" aria-label="Filter task">
         <button class="filter-btn active" data-filter="all">All</button>
-
         <button class="filter-btn" data-filter="active">Active</button>
-
         <button class="filter-btn" data-filter="completed">Completed</button>
       </div>
 
       <ul id="todo-list" class="todo-list">
-
       </ul>
 
       <footer class="app-footer">
         <span id="todo-counter">0 task active</span>
-        <button id="clear-completed-btn">clear completed</button>
+        <button id="clear-completed-btn">Clear completed</button>
       </footer>
     </main>
   </body>
